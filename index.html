@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List + JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="welcome_block">
+        <h1 class="welcome_block_title">What's Up,</h1>
+        <input
+          class="welcome_block_input"
+          placeholder="Type Your Name"
+          value="Bekzhan"
+          type="text"
+        />
+      </div>
+
+      <div class="to_do_block">
+        <h3 class="to_do_block_text">What's on your todo list?</h3>
+        <input
+          id="input"
+          class="to_do_block_input"
+          placeholder="finish todo list project"
+          type="text"
+        />
+      </div>
+
+      <div class="category">
+        <h5 class="category_title">Pick a category</h5>
+        <div class="category_inputs">
+          <div class="category_input_business">
+            <input class="business_input" name="category_inputs" type="radio" />
+            <p>Business</p>
+          </div>
+
+          <div class="category_input_personal">
+            <input class="personal_input" name="category_inputs" type="radio" />
+            <p>Personal</p>
+          </div>
+        </div>
+
+        <button id="button" class="category_btn">Add todo</button>
+      </div>
+
+      <div id="todo_list" class="todo_list_container">
+        <div class="todo_list_wrapper">
+          <div class="todo_list_value">
+            <input class="todo_list_check" type="radio" />
+            <div class="input_value">asd</div>
+          </div>
+          <div class="todo_list_btns">
+            <button class="todo_list_edit">Edit</button>
+            <button class="todo_list_delete">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
